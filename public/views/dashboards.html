@@ -1,0 +1,21 @@
+<px-context-browser
+    initial-contexts='{{initialContexts}}'
+    handlers="ngScope:handlers"
+    opened-item-name="Select Context">
+</px-context-browser>
+
+<px-dashboard selected-deck="{{selectedDeck}}" context="{{context}}"></px-dashboard>
+
+<description-card
+  id="dashboard-description-card"
+  head="Plant Monitoring and Diagnostics"
+  repo-url="http://github.com/predixdev/predix-rmd-ref-app"
+  selected-deck="{{selectedDeck}}"
+  context="{{context}}">
+
+  <p>Click 'Select Context' above, then drill down to find equipment and view data.</p>
+  <p><b>Note:</b> Access to the private Github repo requires an invitation to the Predix Beta.</p>
+  <div style="text-align: center;">
+    <img src="images/good2-turbine.png" alt="good turbine"  width="350px">
+  </div>
+</description-card>
